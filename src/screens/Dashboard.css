@@ -1,0 +1,202 @@
+/* Body Scrollbar */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #a7afb6); /* Subtle gradient */
+    color: #333;
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px; /* Space for the fixed navbar */
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5); /* Gradient thumb */
+    border-radius: 10px; /* Rounded thumb */
+    border: 2px solid #e3f2fd; /* Space around thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1e88e5, #1565c0); /* Darker on hover */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light track */
+    border-radius: 10px; /* Rounded track */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for emphasis */
+    background-color: #1565c0; /* Ensure the navbar is clearly visible */
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    color: white; /* Title text color */
+    position: relative; /* For positioning the logo */
+    font-size: x-large;
+}
+
+.navbar-brand::before {
+    content: '';
+    display: block;
+    background-image: url('../images/logo.jpg'); /* Path to your logo image */
+    clip-path: circle(50%);
+    background-size: contain; /* Adjusts the image size */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 60px; /* Width of the logo */
+    height: 60px; /* Height of the logo */
+    margin-right: 10px; /* Space between the logo and the brand title */
+}
+
+.nav-button {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    border-radius: 20px; /* Rounded button */
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #1565c0; /* Darker shade on hover */
+    color: white;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgb(212, 234, 243); /* Clean white container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 100px; /* Adjusted top margin to clear the navbar */
+}
+
+/* Heading Section */
+.heading-section {
+    margin-top: 20px;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #070707;
+    margin-bottom: 10px;
+}
+
+.exam-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Button Section */
+.button-section {
+    margin-top: 30px;
+}
+
+.button-section .btn {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #42a5f5, #1e88e5); /* Gradient for button */
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.button-section .btn:hover {
+    background: linear-gradient(135deg, #1e88e5, #1565c0); /* Darker gradient */
+    transform: translateY(-3px); /* Subtle hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+}
+
+.info-section {
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: #f9f9f9; /* Light background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: start;
+}
+
+.download-section {
+    margin-top: 30px; /* Space above the download section */
+    text-align: center; /* Center align the heading and buttons */
+}
+
+.download-section h3 {
+    color: #080a07f3; /* Bootstrap primary color for headings */
+    text-align: center;
+}
+
+.download-section .download-buttons {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally */
+    gap: 15px; /* Add spacing between buttons */
+    margin-top: 15px; /* Space between heading and buttons */
+}
+
+.download-section .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #66bb6a, #43a047); /* Green gradient for past papers */
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.download-section .btn:hover {
+    transform: translateY(-3px); /* Hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+}
+
+/* Specific Button Styling */
+.download-section .btn-success {
+    background: linear-gradient(135deg, #66bb6a, #43a047); /* Green gradient for past papers */
+}
+
+.download-section .btn-info {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5); /* Blue gradient for syllabus */
+}
+
+.download-section .btn-info:hover {
+    background: linear-gradient(135deg, #1e88e5, #1565c0); /* Darker blue gradient for syllabus */
+}
+.Logout-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+

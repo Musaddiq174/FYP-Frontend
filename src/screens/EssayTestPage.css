@@ -1,0 +1,45 @@
+.essay-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.numbered-topics {
+  margin-bottom: 20px;
+}
+
+.topic-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.topic-item span {
+  margin-left: 8px;
+}
+
+.user-response {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.file-upload {
+  margin-bottom: 16px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

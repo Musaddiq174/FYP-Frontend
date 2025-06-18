@@ -1,0 +1,79 @@
+/* General Card Styling */
+.feedback-card {
+    max-width: 400px;
+    margin:100px  auto;
+    padding: 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  /* Card Header Styling */
+  .feedback-card-header {
+    text-align: center;
+    color: green;
+  }
+  
+  /* Icon Box Styling */
+  .feedback-icon-box {
+    background-color: green;
+    padding: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feedback-icon {
+    color: white;
+    font-size: 30px;
+  }
+  
+  /* Score Section */
+  .feedback-score-text {
+    color: grey;
+  }
+  
+  .feedback-score {
+    font-weight: bold;
+  }
+  
+  /* Progress Bar */
+  .feedback-progress-bar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+  }
+  
+  .feedback-progress-bar .MuiLinearProgress-bar {
+    background-color: green;
+  }
+  
+  /* Feedback Message */
+  .feedback-message {
+    text-align: center;
+    color: grey;
+    margin-bottom: 16px;
+  }
+  
+  /* Improvements Section */
+  .feedback-improvements-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: grey;
+    margin-bottom: 8px;
+  }
+  
+  .feedback-improvements-list {
+    list-style: disc;
+    padding-left: 16px;
+  }
+  
+  .feedback-improvements-item {
+    color: black;
+  }
+  
+  /* Button Styling */
+  .feedback-back-button {
+    width: 100%;
+  }
+  

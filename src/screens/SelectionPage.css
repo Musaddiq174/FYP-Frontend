@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: url('../images/Testbackground.avif') no-repeat center center fixed;  */
+  background-size: cover; /* Ensures the image covers the whole page */
+  font-family: Arial, sans-serif; /* Optional: Specify a font for the page */
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #3975a0, #f7fbfc); /* Gradient background */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+.title {
+  color: #10e609;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15); /* Text shadow */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #080808;
+}
+
+.select {
+  width: 80%;
+  max-width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1a039b;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 14px;
+  color: #0e0202;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.select:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(46, 139, 87, 0.5); /* Green glow */
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adds space between buttons */
+}
+
+.start-button,
+.back-button {
+  background: linear-gradient(145deg, #4caf50, #3e8e41); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.start-button:hover {
+  background: linear-gradient(145deg, #3e8e41, #4caf50); /* Hover color effect */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Lift effect */
+}
+
+.back-button {
+  background: linear-gradient(145deg, #2196f3, #1a73e8); /* Gradient background */
+}
+
+.back-button:hover {
+  background: linear-gradient(145deg, #1a73e8, #2196f3); /* Hover color effect */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Lift effect */
+}
+
+.btn-back{
+  margin-top: 5%;
+  background: linear-gradient(145deg, #4caf50, #3e8e41); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.btn-back:hover {
+  background: linear-gradient(145deg, #3e8e41, #4caf50); /* Hover color effect */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Lift effect */
+}

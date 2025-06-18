@@ -1,0 +1,74 @@
+/* General styles */
+body {
+  font-family: 'Times New Roman', serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7ff; /* Light sky-blue background */
+}
+
+.test-interface-container {
+  max-width: 900px;
+  margin: 100px auto;
+  background: #fff;
+  border: 1px solid #004080;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test-header {
+  text-align: center;
+  background: #004080;
+  color: #fff;
+  padding: 15px 0;
+  border-bottom: 2px solid #1a73e8;
+  border-radius: 10px 10px 0 0;
+}
+
+.instructions {
+  background: #f0f8ff;
+  padding: 15px;
+  border: 1px dashed #004080;
+  margin-bottom: 20px;
+}
+
+.questions {
+  margin-top: 20px;
+  text-align: start;
+}
+
+.questions ul {
+  list-style-type: none;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.questions ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.questions ul label {
+  cursor: pointer;
+}
+
+.missed-question {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #004080;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0dcc2d;
+}
